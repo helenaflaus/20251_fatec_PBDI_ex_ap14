@@ -1,5 +1,9 @@
 -- Active: 1742297523462@@127.0.0.1@5432@20251_fatec_pbdi_helena
 
+-- teste
+DELETE FROM tb_pessoa WHERE cod_pessoa = 1;
+SELECT * FROM tb_pessoa WHERE cod_pessoa = 1;
+
 -- trigger que chama a função antes de cada DELETE em tb_pessoa
 CREATE TRIGGER tg_bloquear_delete_pessoa
 BEFORE DELETE ON tb_pessoa
